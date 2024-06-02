@@ -1,0 +1,33 @@
+.header-root{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: flex-start;
+    background-color: #4c9dfa;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+h1{
+    color: #fff;
+}
+.btn{
+    &.logout{
+        text-align: center;
+        display: block;
+        background: #ffffff;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 16px 10px;
+        cursor: pointer;
+        color: black;
+        box-shadow: none;
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover{
+            box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.20);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: #000;
+    margin: 10px 0 0;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    //box-shadow: none;
+    transition: background-color 0.3s ease-in-out;
+    &:hover{
+        //box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.30);
+        background-color: #d1d1d1;
+        transition: background-color 0.3s ease-in-out;
+    }
+    &.active{
+        background-color: #d1d1d1;
+        color: #03014b;
+        text-decoration: underline;
+    }
+}

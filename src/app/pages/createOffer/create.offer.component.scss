@@ -1,0 +1,58 @@
+@import "../../../styles.scss";
+
+
+h3{
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+h1{
+    font-weight: 600;
+}
+
+.co-root{
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.co-container{
+    margin: 10px 0 0 0;
+}
+
+
+.date{
+    display: block;
+    background-color: #dddddd;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    margin: 6px 0 0;
+    pointer-events: none;
+    user-select: none;
+    font-size: 14px;
+    width: 86px;
+    margin: 10px 0 0;
+}
+
+
+.btn{
+    user-select: none;
+    &.save{
+        margin: 10px 0 0;
+        background-color: blue;
+        color: #fff;
+        &:hover{
+            box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.50);
+        }
+    }
+}
+
+.error{
+    border-color: red;
+}
+
+.counter-block{
+    background: none;
+}

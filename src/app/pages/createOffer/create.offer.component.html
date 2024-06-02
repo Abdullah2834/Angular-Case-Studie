@@ -1,0 +1,39 @@
+<div class="co-root">
+    <h1>KAMPANYA OLUŞTUR</h1>
+    <form [formGroup]="createOfferForm" class="co-container">
+        <div class="co-block">
+            <h3><b style="color:red;">*</b>Kampanya Başlığı</h3>
+            <input 
+                    required 
+                    formControlName="offerTitle"
+                    type="text"
+                    [ngClass]="{'error': showError}"  
+                    
+                >
+            <h3><b style="color:red;">*</b>Kampanya Açıklama</h3>
+            <input
+                    required 
+                    formControlName="offerDesc"
+                    type="text"  
+                    [ngClass]="{'error': showError}" 
+                      
+                >
+            <h3>Kampanya Puan</h3>
+            <div class="counter-block">
+                <!--<button class="btn dec" [style.pointerEvents]="(currentNumber===0 ? 'none': null)" (click)="decrement()">-</button>-->
+                <p>{{currentNumber}}</p>
+                <!--<button class="btn inc" (click)="increment()">+</button>-->
+            </div>
+            <div class="co-item">
+               
+                <input type="text" 
+                    class="date" 
+                    formControlName="currentDate" 
+                    placeHolder="currentDate"
+                >
+           </div>
+        </div>
+        <button class="btn save" (click)="onSubmit()">Kaydet</button>
+    </form>
+    <success [showMsg]="showMsg" *ngIf="isAdded == true"></success>
+</div>

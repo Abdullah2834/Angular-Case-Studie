@@ -1,0 +1,40 @@
+<div class="login-root">
+    <div class="login-wrapper">
+        <div class="login-container">
+            <h1>Kullanıcı Girişi</h1>
+            <form [formGroup]="loginForm">
+                <div class="input-container">
+                    <input 
+                        formControlName="userName" 
+                        type="text"
+                        [ngClass]="{error: showError}"
+                        [(ngModel)]="userName"
+                        required
+                        placeholder="Kullanıcı Adı"
+                    >
+                    <span *ngIf="showError">kullanıcı adını girin</span>
+                </div>
+                <div class="input-container" >
+                    <input 
+                        formControlName="password" 
+                        [ngClass]="{error: showError}"
+                        required
+                        type="password"
+                        [(ngModel)]="password"
+                        placeholder="Şifre"
+
+                    >
+                  
+                    <span *ngIf="showError">şifre girin</span>
+                </div>
+                <button 
+                    class="btn" 
+                    type="button"
+                    (click)="onSubmit()"
+                >
+                    Giriş
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

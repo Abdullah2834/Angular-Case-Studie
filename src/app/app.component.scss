@@ -1,0 +1,19 @@
+.home-root{
+    display: flex;
+    width: 100%;
+    &.login{
+        display: block;
+    }
+}
+.offers-root{
+    padding: 30px 0 0 0;
+    margin: 0 20px 0 30px;
+    width: 100%;
+}
+.sidebar-root{
+    padding: 15px;
+    background-color: #4c9dfa;
+    max-width: 200px;
+    width: 100%;
+    height: 100vh;
+}
